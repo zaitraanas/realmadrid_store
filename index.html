@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Real Madrid Logo" class="logo">
+        <h1>Real Madrid Store</h1>
+        <button id="toggleCartBtn">Afficher/Cacher Panier</button>
+    </header>
+    <div id="cart" class="hidden">
+        <h2>Panier</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: <span id="totalPrice">0</span> €</p>
+        <button id="emptyCartBtn">Vider Panier</button>
+    </div>
+    <div class="filters">
+        <label><input type="checkbox" class="filter" value="Jerseys" checked> Maillots</label>
+        <label><input type="checkbox" class="filter" value="Accessories" checked> Accessoires</label>
+        <label><input type="checkbox" class="filter" value="Footwear" checked> Chaussures</label>
+    </div>
+    <div id="productList"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
